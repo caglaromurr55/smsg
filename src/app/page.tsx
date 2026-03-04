@@ -62,6 +62,9 @@ export default function AuthScreen() {
         const displayName = codename.replace("agent_", "Ajan ");
         const formattedDisplay = displayName.charAt(0).toUpperCase() + displayName.slice(1);
 
+        // Keep a log of the login
+        await supabase.from('login_logs').insert([{ codename: codename }]);
+
         setLogs(prev => [...prev, `> YETKİ ONAYLANDI (${formattedDisplay})`, "> İLETİŞİM AĞINA BAĞLANILIYOR..."]);
         setStatus("granted");
         setTimeout(() => router.push("/chat"), 1500);
