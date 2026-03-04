@@ -11,12 +11,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Aura Comm-Link",
+  title: "SMSG Secure",
   description: "Secure Encrypted Communication",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
-    title: "CommLink",
+    title: "SMSG Secure",
     statusBarStyle: "black-translucent",
   },
   icons: {
