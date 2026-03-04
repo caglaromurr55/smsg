@@ -785,7 +785,7 @@ export default function ChatScreen() {
                     </div>
                 )}
 
-                <form onSubmit={sendMessage} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <form onSubmit={sendMessage} className="chat-footer-form" style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', width: '100%' }}>
 
                     <input
                         type="file"
